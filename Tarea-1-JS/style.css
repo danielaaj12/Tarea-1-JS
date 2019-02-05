@@ -1,0 +1,21 @@
+body{
+    background-color:rgb(247, 131, 133);
+    text-align: center;
+}
+
+.container_general{
+    text-align: center;
+    padding-top: 100px;    
+}
+.table{
+    text-align: center;
+}
+
+.amount{
+    padding-top: 60px;
+}
+
+.container_form{
+    padding: 10px;
+    border-radius: 10px;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tare #1 JavaScript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+   
+</head>
+<body>
+   <div class="container_general">
+     <h1>Bills</h1>
+     <div class="container_form">
+       <!--Form-->
+       <form action="#">
+           <label for="name">Name</label>
+           <input type="text" id="name_form" class="name_form" placeholder="Name">
+           <label for="amount">Amount</label>
+           <input type="number" id="amount_form" class="amount_form" placeholder="Amount">
+           <label for="date">Date</label>
+           <input type="date" id="date_form" class="date_form" placeholder="Date">
+           <label for="type">Type</label>
+           <select  id="type_form" class="type_form">
+               <option value="A">A</option>
+               <option value="B">B</option>
+               <option value="C">C</option>
+           </select>
+           <buttton class="reset_btn"></buttton>
+           <buttton class="save_btn"></buttton>
+        </form>
+      </div>
+      <!--Table-->
+      <div class="container_table">
+          
+      </div>
+
+      <div class="amount">
+        <span class="total">Total A</span>
+        <span class="número"></span>
+      </div>
+      
+      <div class="amount">
+        <span class="total">Total B</span>
+        <span class="número"></span>
+      </div>
+
+      <div class="amount">
+        <span class="total">Total C</span>
+        <span class="número"></span>
+      </div>
+    
+    </div>
+<script src="script.js"></script>    
+</body>
+</html>
