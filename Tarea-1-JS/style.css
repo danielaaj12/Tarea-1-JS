@@ -1,21 +1,83 @@
 body{
-    background-color:rgb(247, 131, 133);
-    text-align: center;
+    background-color: rgb(238, 153, 153);
+    font-family: 'Nanum Gothic', sans-serif;
 }
 
-.container_general{
+h1{
+    font-family:'Anton', sans-serif;
     text-align: center;
-    padding-top: 100px;    
-}
-.table{
-    text-align: center;
+    padding-top: 50px;
 }
 
-.amount{
-    padding-top: 60px;
-}
-
-.container_form{
+.section_form{
+    text-align: center;
     padding: 10px;
     border-radius: 10px;
+    padding-top:50px; 
 }
+
+#table{
+    text-align: center;
+}
+
+#bill_summatory{
+    text-align: center;
+}
+
+.table, th, td {
+    border-bottom: 1.8px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center; 
+  }
+  
+  label{
+    margin-left: 0.5%;
+  }
+  
+  th {
+    color: rgb(8, 7, 7); 
+    border: 1px solid rgb(0, 0, 0);
+  }
+    
+  .table {
+    width: 99%;
+    margin-top: 25px;
+    margin-bottom: 25px; 
+  }
+ 
+  #amount, #date, #name, #type {
+    width: 12%;
+    padding: 0.5%;
+    margin-left: 1%;
+    margin-top: 2%;
+    background-color: white;
+    display: inline-block;
+  }
+  
+  .der{
+    margin-left: 40%;
+  }
+  
+  #amount:hover {
+    background-color: rgb(241, 178, 178);
+    border: 1.8px solid rgb(241, 178, 178);
+    color: white; 
+  }
+  
+  .bill_summatory {
+    border: 1.8px solid black;
+    padding: 10px;
+    margin: 1%;
+     
+  }
+  
+  .total {
+    padding-left: 55%; 
+  }
+  
+  .numero{
+    float: right;
+    margin-right: 12%;
+  }
+  
