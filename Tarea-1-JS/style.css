@@ -25,10 +25,10 @@ h1{
 }
 
 .table, th, td {
-    border-bottom: 1.8px solid black;
     border-collapse: collapse;
     padding: 10px;
     text-align: center; 
+    background-color:rgb(241, 178, 178); 
   }
   
   label{
