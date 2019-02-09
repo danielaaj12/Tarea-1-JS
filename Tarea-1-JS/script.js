@@ -16,33 +16,18 @@
   }
   function save() {
     const factura = document.getElementById('factura');
-    let fila = '';
+    let bills_information = '';
     const new_information = {
       name: name_form.value, type: type_form.value, date: date_form.value, amount: amount_form.value,
     };
     information.push(new_information);
     for (let i = 0; i < information.length; i += 1) {
-      fila += `<tr><td> ${information[i].name} </td><td>  ${information[i].type} </td><td> ${information[i].date} </td><td> ${information[i].amount} </td></tr>`;
+      bills_information += `<tr><td> ${information[i].name} </td><td>  ${information[i].type} </td><td> ${information[i].date} </td><td> ${information[i].amount} </td></tr>`;
     }
-    factura.innerHTML = fila;
-    totalFinalA();
-    totalFinalB();
-    totalFinalC();
-
+    factura.innerHTML =bills_information;
   }
 
   save_action.addEventListener('click', save);
   reset_action.addEventListener('click', reset);
-
-
-
-
-
-
-
-
-
-
-
 
 }());
