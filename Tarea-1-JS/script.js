@@ -24,10 +24,42 @@
     for (let i = 0; i < information.length; i += 1) {
       bills_information += `<tr><td> ${information[i].name} </td><td>  ${information[i].type} </td><td> ${information[i].date} </td><td> ${information[i].amount} </td></tr>`;
     }
-    bill_general.innerHTML =bills_information;
+    bill_general.innerHTML = bills_information;
   }
 
   save_action.addEventListener('click', save);
   reset_action.addEventListener('click', reset);
+  
+  //summatory of bills amounts
+  const array = [
+    {
+      type: 'A',
+      amount: 1212
+    },
+    {
+      type: 'B',
+      amount: 232
+    },
+    {
+      type: 'C',
+      amount: 1212
+    },
+    {
+      type: 'A',
+      amount: 232
+    },
+  ];
+  let opciones = ['A', 'B', 'C'];
+  let sumaDeAmountsArray = {
+    A: 0,
+    B: 0,
+    C: 0
+  };
+  for (let i of array) {
+    for (let a of opciones) {
+      if (i.type === a) sumaDeAmountsArray[a] += i.amount;
+    }
+  }
+  console.log(sumaDeAmountsArray);
 
 }());
